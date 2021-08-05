@@ -34,7 +34,7 @@ Database is hosted on MongoDB Atlas.
 
 REST API made with Express, NodeJS and Mongoose is used to connect frontend and database
 
-### Backend of app is hosted on Heroku:
+### Backend of app is hosted on Heroku: https://tasktracker-app-final.herokuapp.com
 
 ### Frontend of app is hoted on Github Pages: https://siddhantmohanty2001.github.io/tasktracker-app/
 
