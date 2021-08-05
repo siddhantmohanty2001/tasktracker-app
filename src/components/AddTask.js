@@ -8,7 +8,7 @@ const AddTask =({onAdd,change,setChange})=>  {
         
     
 const postTask=async ()=>{
-    const res=await fetch('/post',{
+    const res=await fetch('https://tasktracker-app-final.herokuapp.com/post',{
         method:"POST",
         headers: {
             "Content-Type": "application/json",

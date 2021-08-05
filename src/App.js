@@ -9,7 +9,7 @@ function App() {
   const [tasks, setTasks]=useState([])
   //Get method
   const callPost=async ()=>{
-    const res= await fetch('/get')
+    const res= await fetch('https://tasktracker-app-final.herokuapp.com/get')
     const data=await res.json();
     console.log(data);
     setTasks(data);
@@ -29,7 +29,7 @@ const deletetask= async (id)=>{
   /*setTasks(tasks.filter((tasks)=>
     tasks._id!==id
   ))*/
-const res=await fetch('/delete',{
+const res=await fetch('https://tasktracker-app-final.herokuapp.com/delete',{
   method: "DELETE",
   headers: { 
     "Content-Type": "application/json",
@@ -45,7 +45,7 @@ setChange(!change);
 
  const toggleremainder=async (id,remainder)=>{
   /* setTasks(tasks.map((task)=>task._id===id?{...task,remainder:!task.remainder}:task))*/
-  const res=await fetch('/put',{
+  const res=await fetch('https://tasktracker-app-final.herokuapp.com/put',{
     method: "PUT",
     headers: {
       "Content-Type": "application/json",

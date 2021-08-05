@@ -1,5 +1,6 @@
 {
   "name": "task-tracker-app",
+  "homepage": "https://siddhantmohanty2001.github.io/tasktracker-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,12 +14,14 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://task-tracker-apps.herokuapp.com",
+  
   "eslintConfig": {
     "extends": [
       "react-app",
